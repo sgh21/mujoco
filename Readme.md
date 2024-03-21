@@ -27,3 +27,16 @@ sudo gedit ~/.bashrc
 export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so
 source ~/.bashrc
 ```
+## 运行example
++ 安装相应依赖(pip install <package name>)
+    + simple_pid: 提供了一个简单但功能强大的PID控制器实现
+    + termcolor: 用于在终端中添加颜色和样式,想必是学姐用于美化终端的吧
+    + pyquaternion: 处理四元数的Python库
+    + cv2: opencv 图像处理
+    + matplotlib: Python 数据可视化库，用于创建出版质量的图形
+    + transforms3d:三维坐标转换库
+    + pybullet:项目中使用pybullet提供的运动学逆解器
++ 如果仍有其他依赖需要安装，按照错误提示进行安装即可
++ 运行example.py：
+    + 需要进入my_mujoco_platform文件夹中
+    + 正常运行python文件即可，会自动输出一些图片数据
