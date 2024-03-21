@@ -9,15 +9,15 @@ import mujoco as mp
 import mujoco.viewer
 import time
 import numpy as np
-from simple_pid import PID
-from termcolor import colored
-from pyquaternion import Quaternion
-import cv2 as cv
-import matplotlib.pyplot as plt
+from simple_pid import PID #提供了一个简单但功能强大的PID控制器实现
+from termcolor import colored #用于在终端中添加颜色和样式,想必是学姐用于美化终端的吧
+from pyquaternion import Quaternion #处理四元数的Python库
+import cv2 as cv #opencv 图像处理
+import matplotlib.pyplot as plt  #Python 数据可视化库，用于创建出版质量的图形
 import copy
-import transforms3d
+import transforms3d #三维坐标转换库
 from ikSolver_UR import ikSolver
-import pybullet as p
+import pybullet as p 
 import pybullet_data
 
 ROBOT_URDF_PATH = "./urdf_data/ur5e_hande.urdf"

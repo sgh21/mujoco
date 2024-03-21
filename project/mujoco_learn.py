@@ -1,7 +1,9 @@
 import mujoco_py
 import os
-mj_path = mujoco_py.utils.discover_mujoco()
-xml_path = os.path.join(mj_path, 'model', 'humanoid100.xml')
+# mj_path = mujoco_py.utils.discover_mujoco()
+# xml_path = os.path.join(mj_path, 'model', 'wire.xml')
+# xml_path='./mujoco-py/xmls/tosser.xml'
+xml_path='./my_mujoco_platform/tabele.xml'
 model = mujoco_py.load_model_from_path(xml_path)
 sim = mujoco_py.MjSim(model)
 viewer=mujoco_py.MjViewer(sim)
