@@ -12,7 +12,8 @@ import mujoco.viewer
 
 
 # m = mujoco.MjModel.from_xml_path('./my_mujoco_platform/UR5+gripper/UR5gripper_2_finger.xml')
-m = mujoco.MjModel.from_xml_path('./my_mujoco_platform/wire.xml')
+# m = mujoco.MjModel.from_xml_path('./my_mujoco_platform/wire.xml')
+m=mujoco.MjModel.from_xml_path('./mujoco-py/xmls/tosser.xml')
 # m = mujoco.MjModel.from_xml_path('./my_mujoco_platform/UR5e+robotiq85/scene_doublerobot_vslot.xml')
 # m = mujoco.MjModel.from_xml_path('./belt.xml')
 d = mujoco.MjData(m)
